@@ -4,7 +4,7 @@ project(Test)
 
 find_package(Threads)
 
-add_executable(Programm1 Programm1.cpp)
+add_executable(Programm1 programm1/Programm1.cpp)
 
 set_target_properties(
     Programm1 PROPERTIES
@@ -17,7 +17,7 @@ target_link_libraries(
     ${CMAKE_THREAD_LIBS_INIT}
 )
 
-add_executable(Programm2 Programm2.cpp)
+add_executable(Programm2 programm2/Programm2.cpp)
 
 set_target_properties(
     Programm2 PROPERTIES
