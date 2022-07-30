@@ -68,7 +68,7 @@ public:
             {
                 if(check=(str[i]>='A' && str[i]<='Z')|| (str[i] >='a' && str[i]<='z'))
                 {
-                    std::cout<<"\nthere is a Letter in the string\n";
+                    std::cout<<"\nthere is a letter in the string\n";
                     break;
                 }
             }
@@ -150,7 +150,7 @@ public:
             std::string str;
             message->getBuff(&str);
             int sum=0;
-            std::cout<<"\nrecieved data: "<<str<<"\n";
+            std::cout<<"\nedited data: "<<str<<"\n";
     
 
             for(std::string::iterator it=str.begin(); it!=str.end();it++)
@@ -174,7 +174,6 @@ public:
         sprintf(send_msg, "%d", letter);
         for(int i=0;i>strlen(send_msg); i++)
         send_msg[i]-='0';
-
         if(send(sock, send_msg, strlen(send_msg)*sizeof(char), 0)==-1)
         {
             std::cout<<"\nError: send";
